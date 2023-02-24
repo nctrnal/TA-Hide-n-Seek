@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MainMenuScript : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void ButtonLeaderboard()
+    {
+        SceneManager.LoadScene("LeaderboardScene");
+    }
+
+    public void ButtonPlay()
+    {
+        SceneManager.LoadScene("FindFirstItemScene");
+    }
+    public void ButtonQuit()
+    {
+        Application.Quit();
+        Debug.Log("game quit");
+    }
+}
